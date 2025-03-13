@@ -25,5 +25,20 @@ students = [
     }
 ]
 
-for student in students:
-    print(f"Name: {student['first_name']} {student['last_name']}, Index: {student['index_number']}, Courses: {', '.join(student['courses'])}")
+def add_student(first_name, last_name, index_number, nationality, starting_date, courses):
+    """Adds a new student to the students list."""
+    new_student = {
+        'first_name': first_name,
+        'last_name': last_name,
+        'index_number': index_number,
+        'nationality': nationality,
+        'starting_date': starting_date,
+        'courses': courses  # Should be a list
+    }
+    students.append(new_student)
+    print(f"Student {first_name} {last_name} added successfully!")
+
+def display_students():
+    """Displays all students in the list."""
+    for student in students:
+        print(f"Name: {student['first_name']} {student['last_name']}, Index: {student['index_number']}, Courses: {', '.join(student['courses'])}")
