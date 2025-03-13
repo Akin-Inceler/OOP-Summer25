@@ -5,5 +5,5 @@ student1 = {
   'index_number' : '35525',
   'nationality': 'Turkiye',
   'starting_date':'01.09.2024',
-  'courses':'mathematic,physics,software'
+  'courses':['mathematic','physics','software']
 }
