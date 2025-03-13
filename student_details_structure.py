@@ -1,4 +1,4 @@
-# example
+
 student1 = {
  'first_name':'Akin',
   'last_name':'Inceler',
